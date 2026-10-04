@@ -7609,192 +7609,192 @@ const cancelfaceData = {
   "identification_summary": [
     {
       "Metode": "Random Projection",
-      "TPIR pada FPIR 0.2": 0.1605422924901186,
-      "TPIR pada FPIR 0.1": 0.11289767441860465,
-      "TPIR pada FPIR 0.05": 0.08140660066006601,
-      "TPIR pada FPIR 0.01": 0.036070175438596495,
-      "Rank 1 Accuracy": 0.3114,
-      "Rank 5 Accuracy": 0.44793333333333335
+      "TPIR pada FPIR 0.2": 0.1769156462585034,
+      "TPIR pada FPIR 0.1": 0.1244607843137255,
+      "TPIR pada FPIR 0.05": 0.0882168498168498,
+      "TPIR pada FPIR 0.01": 0.0412461538461538,
+      "Rank 1 Accuracy": 0.3411333333333333,
+      "Rank 5 Accuracy": 0.4769333333333333
     },
     {
       "Metode": "BioHashing",
-      "TPIR pada FPIR 0.2": 0.11374616755793227,
-      "TPIR pada FPIR 0.1": 0.08142164750957855,
-      "TPIR pada FPIR 0.05": 0.05674057971014493,
-      "TPIR pada FPIR 0.01": 0.029133333333333334,
-      "Rank 1 Accuracy": 0.218,
-      "Rank 5 Accuracy": 0.354
+      "TPIR pada FPIR 0.2": 0.1252777096114519,
+      "TPIR pada FPIR 0.1": 0.0852201834862385,
+      "TPIR pada FPIR 0.05": 0.0613403508771929,
+      "TPIR pada FPIR 0.01": 0.0267757575757575,
+      "Rank 1 Accuracy": 0.2434,
+      "Rank 5 Accuracy": 0.3831333333333333
     },
     {
       "Metode": "Metode Usulan",
-      "TPIR pada FPIR 0.2": 0.23102589371980678,
-      "TPIR pada FPIR 0.1": 0.1829870646766169,
-      "TPIR pada FPIR 0.05": 0.1452808080808081,
-      "TPIR pada FPIR 0.01": 0.06948888888888889,
-      "Rank 1 Accuracy": 0.3406,
-      "Rank 5 Accuracy": 0.4896
+      "TPIR pada FPIR 0.2": 0.2444566037735849,
+      "TPIR pada FPIR 0.1": 0.1954809968847352,
+      "TPIR pada FPIR 0.05": 0.1531639639639639,
+      "TPIR pada FPIR 0.01": 0.0718923076923077,
+      "Rank 1 Accuracy": 0.3537333333333333,
+      "Rank 5 Accuracy": 0.5028
     }
   ],
   "iso_summary": [
     {
       "Metode": "Metode Usulan",
-      "KS Statistic Unlinkability": 0.18228333333333335,
-      "Overlap Coefficient": 0.8180333333333332,
+      "KS Statistic Unlinkability": 0.0277777777777777,
+      "Overlap Coefficient": 0.9234567901234568,
       "Revocability Cross-Match Rate": 0.0
     }
   ],
   "reconstruction_summary": [
     {
       "Metode": "Random Projection",
-      "Rata Rata Kemiripan Kosinus": 0.9079771734235329,
-      "Tingkat Keberhasilan Reidentifikasi": 0.29422894985808895,
+      "Rata Rata Kemiripan Kosinus": 0.8645197285376349,
+      "Tingkat Keberhasilan Reidentifikasi": 0.281929990539262,
       "Ukuran Sampel N_eff": 1057
     },
     {
       "Metode": "BioHashing",
-      "Rata Rata Kemiripan Kosinus": 0.7683963339539449,
-      "Tingkat Keberhasilan Reidentifikasi": 0.17786187322611163,
+      "Rata Rata Kemiripan Kosinus": 0.7686458879417941,
+      "Tingkat Keberhasilan Reidentifikasi": 0.206244087038789,
       "Ukuran Sampel N_eff": 1057
     },
     {
       "Metode": "Metode Usulan",
-      "Rata Rata Kemiripan Kosinus": 0.06871579324229304,
-      "Tingkat Keberhasilan Reidentifikasi": 0.0,
+      "Rata Rata Kemiripan Kosinus": 0.1423290051662418,
+      "Tingkat Keberhasilan Reidentifikasi": 0.0009460737937559,
       "Ukuran Sampel N_eff": 1057
     }
   ],
   "attack_summary": [
     {
       "Metode": "Random Projection",
-      "Akurasi Tebakan Jenis Kelamin": 0.6555555555555556,
-      "Akurasi Tebakan Kelompok Usia": 0.5790123456790124
+      "Akurasi Tebakan Jenis Kelamin": 0.6611111111111111,
+      "Akurasi Tebakan Kelompok Usia": 0.5345679012345679
     },
     {
       "Metode": "BioHashing",
-      "Akurasi Tebakan Jenis Kelamin": 0.6580246913580247,
-      "Akurasi Tebakan Kelompok Usia": 0.5635802469135802
+      "Akurasi Tebakan Jenis Kelamin": 0.6234567901234568,
+      "Akurasi Tebakan Kelompok Usia": 0.5006172839506173
     },
     {
       "Metode": "Metode Usulan",
-      "Akurasi Tebakan Jenis Kelamin": 0.5666666666666667,
-      "Akurasi Tebakan Kelompok Usia": 0.43950617283950616
+      "Akurasi Tebakan Jenis Kelamin": 0.5382716049382716,
+      "Akurasi Tebakan Kelompok Usia": 0.395679012345679
     }
   ],
   "ablation": [
     {
-      "TEMPLATE_DIM": 64.0,
-      "Rank 1 Accuracy": 0.19986666666666666
+      "TEMPLATE_DIM": 64,
+      "Rank 1 Accuracy": 0.2152666666666666
     },
     {
-      "TEMPLATE_DIM": 128.0,
-      "Rank 1 Accuracy": 0.2786
+      "TEMPLATE_DIM": 128,
+      "Rank 1 Accuracy": 0.2914666666666666
     },
     {
-      "TEMPLATE_DIM": 256.0,
-      "Rank 1 Accuracy": 0.3114
+      "TEMPLATE_DIM": 256,
+      "Rank 1 Accuracy": 0.3411333333333333
     },
     {
-      "TEMPLATE_DIM": 512.0,
-      "Rank 1 Accuracy": 0.34413333333333335
+      "TEMPLATE_DIM": 512,
+      "Rank 1 Accuracy": 0.3688
     }
   ],
   "robustness": [
     {
       "Metode": "BioHashing",
       "Tingkat Kualitas": "Resolusi Rendah",
-      "Rank 1 Accuracy": 0.165,
+      "Rank 1 Accuracy": 0.1916,
       "Jumlah Sampel": 5000
     },
     {
       "Metode": "BioHashing",
       "Tingkat Kualitas": "Resolusi Sedang",
-      "Rank 1 Accuracy": 0.2344,
+      "Rank 1 Accuracy": 0.267,
       "Jumlah Sampel": 5000
     },
     {
       "Metode": "BioHashing",
       "Tingkat Kualitas": "Resolusi Tinggi",
-      "Rank 1 Accuracy": 0.2546,
+      "Rank 1 Accuracy": 0.2716,
       "Jumlah Sampel": 5000
     },
     {
       "Metode": "Metode Usulan",
       "Tingkat Kualitas": "Resolusi Rendah",
-      "Rank 1 Accuracy": 0.3032,
+      "Rank 1 Accuracy": 0.3218,
       "Jumlah Sampel": 5000
     },
     {
       "Metode": "Metode Usulan",
       "Tingkat Kualitas": "Resolusi Sedang",
-      "Rank 1 Accuracy": 0.3694,
+      "Rank 1 Accuracy": 0.3818,
       "Jumlah Sampel": 5000
     },
     {
       "Metode": "Metode Usulan",
       "Tingkat Kualitas": "Resolusi Tinggi",
-      "Rank 1 Accuracy": 0.3492,
+      "Rank 1 Accuracy": 0.3576,
       "Jumlah Sampel": 5000
     },
     {
       "Metode": "Random Projection",
       "Tingkat Kualitas": "Resolusi Rendah",
-      "Rank 1 Accuracy": 0.2506,
+      "Rank 1 Accuracy": 0.2868,
       "Jumlah Sampel": 5000
     },
     {
       "Metode": "Random Projection",
       "Tingkat Kualitas": "Resolusi Sedang",
-      "Rank 1 Accuracy": 0.3334,
+      "Rank 1 Accuracy": 0.3702,
       "Jumlah Sampel": 5000
     },
     {
       "Metode": "Random Projection",
       "Tingkat Kualitas": "Resolusi Tinggi",
-      "Rank 1 Accuracy": 0.3502,
+      "Rank 1 Accuracy": 0.3664,
       "Jumlah Sampel": 5000
     }
   ],
   "final_comparison": [
     {
       "Metode": "Random Projection",
-      "TPIR pada FPIR 0.2": 0.1605422924901186,
-      "TPIR pada FPIR 0.1": 0.11289767441860465,
-      "TPIR pada FPIR 0.05": 0.08140660066006601,
-      "TPIR pada FPIR 0.01": 0.036070175438596495,
-      "Rank 1 Accuracy": 0.3114,
-      "Rank 5 Accuracy": 0.44793333333333335,
-      "Akurasi Tebakan Jenis Kelamin": 0.6555555555555556,
-      "Akurasi Tebakan Kelompok Usia": 0.5790123456790124,
-      "Rata Rata Kemiripan Kosinus": 0.9079771734235329,
-      "Tingkat Keberhasilan Reidentifikasi": 0.29422894985808895,
+      "TPIR pada FPIR 0.2": 0.1769156462585034,
+      "TPIR pada FPIR 0.1": 0.1244607843137255,
+      "TPIR pada FPIR 0.05": 0.0882168498168498,
+      "TPIR pada FPIR 0.01": 0.0412461538461538,
+      "Rank 1 Accuracy": 0.3411333333333333,
+      "Rank 5 Accuracy": 0.4769333333333333,
+      "Akurasi Tebakan Jenis Kelamin": 0.6611111111111111,
+      "Akurasi Tebakan Kelompok Usia": 0.5345679012345679,
+      "Rata Rata Kemiripan Kosinus": 0.8645197285376349,
+      "Tingkat Keberhasilan Reidentifikasi": 0.281929990539262,
       "Ukuran Sampel N_eff": 1057
     },
     {
       "Metode": "BioHashing",
-      "TPIR pada FPIR 0.2": 0.11374616755793227,
-      "TPIR pada FPIR 0.1": 0.08142164750957855,
-      "TPIR pada FPIR 0.05": 0.05674057971014493,
-      "TPIR pada FPIR 0.01": 0.029133333333333334,
-      "Rank 1 Accuracy": 0.218,
-      "Rank 5 Accuracy": 0.354,
-      "Akurasi Tebakan Jenis Kelamin": 0.6580246913580247,
-      "Akurasi Tebakan Kelompok Usia": 0.5635802469135802,
-      "Rata Rata Kemiripan Kosinus": 0.7683963339539449,
-      "Tingkat Keberhasilan Reidentifikasi": 0.17786187322611163,
+      "TPIR pada FPIR 0.2": 0.1252777096114519,
+      "TPIR pada FPIR 0.1": 0.0852201834862385,
+      "TPIR pada FPIR 0.05": 0.0613403508771929,
+      "TPIR pada FPIR 0.01": 0.0267757575757575,
+      "Rank 1 Accuracy": 0.2434,
+      "Rank 5 Accuracy": 0.3831333333333333,
+      "Akurasi Tebakan Jenis Kelamin": 0.6234567901234568,
+      "Akurasi Tebakan Kelompok Usia": 0.5006172839506173,
+      "Rata Rata Kemiripan Kosinus": 0.7686458879417941,
+      "Tingkat Keberhasilan Reidentifikasi": 0.206244087038789,
       "Ukuran Sampel N_eff": 1057
     },
     {
       "Metode": "Metode Usulan",
-      "TPIR pada FPIR 0.2": 0.23102589371980678,
-      "TPIR pada FPIR 0.1": 0.1829870646766169,
-      "TPIR pada FPIR 0.05": 0.1452808080808081,
-      "TPIR pada FPIR 0.01": 0.06948888888888889,
-      "Rank 1 Accuracy": 0.3406,
-      "Rank 5 Accuracy": 0.4896,
-      "Akurasi Tebakan Jenis Kelamin": 0.5666666666666667,
-      "Akurasi Tebakan Kelompok Usia": 0.43950617283950616,
-      "Rata Rata Kemiripan Kosinus": 0.06871579324229304,
-      "Tingkat Keberhasilan Reidentifikasi": 0.0,
+      "TPIR pada FPIR 0.2": 0.2444566037735849,
+      "TPIR pada FPIR 0.1": 0.1954809968847352,
+      "TPIR pada FPIR 0.05": 0.1531639639639639,
+      "TPIR pada FPIR 0.01": 0.0718923076923077,
+      "Rank 1 Accuracy": 0.3537333333333333,
+      "Rank 5 Accuracy": 0.5028,
+      "Akurasi Tebakan Jenis Kelamin": 0.5382716049382716,
+      "Akurasi Tebakan Kelompok Usia": 0.395679012345679,
+      "Rata Rata Kemiripan Kosinus": 0.1423290051662418,
+      "Tingkat Keberhasilan Reidentifikasi": 0.0009460737937559,
       "Ukuran Sampel N_eff": 1057
     }
   ],

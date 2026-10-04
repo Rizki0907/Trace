@@ -130,7 +130,8 @@
     const hackOut = document.getElementById('hack-out');
 
     if (!currentBinaryString) {
-      alert("Silakan Enroll template biometrik terlebih dahulu sebelum meretas!");
+      if (hackPanel) hackPanel.style.display = 'block';
+      if (hackOut) hackOut.innerHTML = '<span style="color:var(--c-red); font-weight:bold;">[ERROR] Silakan Enroll template biometrik terlebih dahulu sebelum meretas!</span>';
       return;
     }
 

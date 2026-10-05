@@ -3,6 +3,40 @@
 
   let currentBinaryString = "";
 
+  window.showToast = function(message, type = 'error') {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+
+    const toast = document.createElement('div');
+    const bgColor = type === 'error' ? 'rgba(244,63,94,0.15)' : 'rgba(16,185,129,0.15)';
+    const borderColor = type === 'error' ? 'var(--c-red)' : 'var(--c-green)';
+    const icon = type === 'error' ? '⚠️' : '✅';
+
+    toast.innerHTML = `<div style="display:flex; align-items:center; gap:12px;"><span style="font-size:16px;">${icon}</span><span style="color:var(--txt); font-size:13px; font-weight:500;">${message}</span></div>`;
+    toast.style.cssText = `
+      background: var(--bg-card);
+      backdrop-filter: blur(10px);
+      border: 1px solid ${borderColor};
+      border-left: 4px solid ${borderColor};
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      padding: 14px 18px;
+      border-radius: 6px;
+      transform: translateX(120%);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    `;
+
+    container.appendChild(toast);
+    
+    // Trigger animation
+    setTimeout(() => { toast.style.transform = 'translateX(0)'; }, 10);
+
+    // Auto remove
+    setTimeout(() => {
+      toast.style.transform = 'translateX(120%)';
+      setTimeout(() => { toast.remove(); }, 400);
+    }, 4500);
+  };
+
   window.previewSimImage = function(event) {
     const file = event.target.files[0];
     if (file) {
@@ -31,7 +65,7 @@
     const actualSeed = mode === 'revoke' ? Math.floor(Math.random() * 10000000) : baseSeed;
 
     if (!fileInput || !fileInput.files || fileInput.files.length === 0) {
-        alert("Peringatan: Silakan upload Citra Uji Wajah (CCTV) terlebih dahulu sebelum Enroll!");
+        window.showToast("Peringatan: Silakan upload Citra Uji Wajah (CCTV) terlebih dahulu sebelum Enroll!", "error");
         return;
     }
 
@@ -174,8 +208,7 @@
     const hackOut = document.getElementById('hack-out');
 
     if (!currentBinaryString) {
-      if (hackPanel) hackPanel.style.display = 'block';
-      if (hackOut) hackOut.innerHTML = '<span style="color:var(--c-red); font-weight:bold;">[ERROR] Silakan Enroll template biometrik terlebih dahulu sebelum meretas!</span>';
+      window.showToast("Peringatan: Silakan Enroll template biometrik terlebih dahulu sebelum melakukan simulasi serangan (Hack)!", "error");
       return;
     }
 

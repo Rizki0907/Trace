@@ -92,10 +92,10 @@
     const hexOut = document.getElementById('sim-hex-out');
     const bitOut = document.getElementById('sim-bit-out');
     const statusBanner = document.getElementById('sim-status');
-    const hackPanel = document.getElementById('hack-panel');
+    const hackModal = document.getElementById('hack-modal');
     const hackOut = document.getElementById('hack-out');
 
-    if (hackPanel) hackPanel.style.display = 'none';
+    if (hackModal) hackModal.style.display = 'none';
 
     if (hexOut) hexOut.innerHTML = '<span style="color:var(--txt3)">Mengirim citra ke AI Server (FastAPI PyTorch)...</span>';
     if (bitOut) bitOut.innerHTML = '<span style="color:var(--txt3)">Mengeksekusi ProposedNet (ArcFace + GRL)...</span>';
@@ -204,7 +204,7 @@
   window.runHack = async function () {
     const backendUrlInput = document.getElementById('sim-backend-url');
     const backendUrl = backendUrlInput ? backendUrlInput.value.trim() : "http://localhost:7860";
-    const hackPanel = document.getElementById('hack-panel');
+    const hackModal = document.getElementById('hack-modal');
     const hackOut = document.getElementById('hack-out');
 
     if (!currentBinaryString) {
@@ -212,7 +212,7 @@
       return;
     }
 
-    if (hackPanel) hackPanel.style.display = 'block';
+    if (hackModal) hackModal.style.display = 'flex';
     if (hackOut) hackOut.innerHTML = '<span style="color:var(--c-amber)">Menginisiasi serangan Inversi pada TemplateDecoder... (Menghubungi Server)</span>';
 
     try {

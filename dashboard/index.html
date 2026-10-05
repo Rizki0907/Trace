@@ -893,7 +893,10 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-cyan)" width="20" height="20" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
       <div>
         <div class="info-note-title">Panduan Operasional Simulator</div>
-        <div>Pilih sampel citra uji dan tentukan seed institusi. Tombol Enroll menghasilkan template biner awal. Tombol Revoke menerbitkan template pengganti baru yang tidak berkorelasi dengan template lama apabila terjadi kebocoran kunci.</div>
+        <div style="margin-bottom: 8px;">Pilih sampel citra uji dan tentukan seed institusi. Tombol Enroll menghasilkan template biner awal. Tombol Revoke menerbitkan template pengganti baru yang tidak berkorelasi dengan template lama apabila terjadi kebocoran kunci.</div>
+        <div style="font-size: 11px; color: var(--c-amber); padding: 8px; border-radius: 4px; border: 1px dashed rgba(255,183,3,0.4); background: rgba(255,183,3,0.05);">
+          <strong>[DISCLAIMER] Edge-AI Simulation Mode:</strong> Untuk memastikan *uptime* 100% saat penjurian tanpa risiko *server crash*, simulator ini menggunakan fungsi *hash* deterministik berbasis *JavaScript* pada sisi *client*. Ia secara akurat mensimulasikan sifat *non-invertible* dan dependensi kunci dari model TRACE asli, di mana gambar yang sama menghasilkan *hash* yang sama, dan rekonstruksi mustahil dilakukan.
+        </div>
       </div>
     </div>
 
@@ -950,17 +953,6 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="2" y1="2" x2="22" y2="22"></line></svg>
             Simulasi Serangan (Hack)
           </button>
-        </div>
-      </div>
-
-      <div class="hud-card sim-panel" id="hack-panel" style="display:none; border-color: var(--c-red); margin-top: 20px;">
-        <div class="hud-bracket-tl"></div>
-        <div class="hud-bracket-tr"></div>
-        <div class="hud-bracket-bl"></div>
-        <div class="hud-bracket-br"></div>
-        <div class="chart-box-title" style="margin-bottom:18px; color: var(--c-red);">Terminal Attacker (Deep Reconstruction)</div>
-        <div style="font-size:12px; color:var(--txt2); margin-bottom: 15px;">Mencoba mengembalikan representasi biner curian menjadi vektor wajah kontinu menggunakan jaringan TemplateDecoder...</div>
-          <span style="color:var(--txt3)">Mengeksekusi model Inverse Generator...</span>
         </div>
       </div>
       </div>
@@ -1112,9 +1104,49 @@
         <div>Format heksadesimal dan aliran bit di atas menggantikan penyimpanan citra visual pada basis data. Jika server diretas, pelaku hanya memperoleh deretan biner acak yang tidak dapat direkonstruksi menjadi wajah asli.</div>
       </div>
     </div>
+
+    <!-- INSIGHT NASIONAL / UU PDP BANNER -->
+    <div class="hero-cyber-frame scroll-reveal" style="margin-top: 40px; border-color: rgba(16,185,129,0.3); background: linear-gradient(135deg, rgba(6,11,18,0.85) 0%, rgba(16,185,129,0.05) 100%);">
+      <div style="flex:1;">
+        <div class="hero-eyebrow" style="color: var(--c-green);">Relevansi & Kepatuhan Nasional</div>
+        <div class="hero-headline-animated" style="font-size: 24px; margin-bottom: 12px; background: linear-gradient(135deg, #10b981, #00f0ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          Solusi Ideal untuk UU Pelindungan Data Pribadi (UU PDP No. 27/2022)
+        </div>
+        <div style="font-size: 14px; color: var(--txt2); line-height: 1.6;">
+          <p style="margin-bottom: 10px;">Berdasarkan <strong>Pasal 11 dan Pasal 28 UU PDP No. 27 Tahun 2022</strong>, pemrosesan data biometrik (seperti wajah pada CCTV) yang bersifat spesifik dan berisiko tinggi wajib mengedepankan keamanan tertinggi serta hak subjek data untuk pencabutan (Right to Erasure).</p>
+          <p>Sistem TRACE membanggakan inovasi di mana citra mentah tidak pernah disimpan. Pendekatan <em>Cancelable Biometrics</em> ini memungkinkan instansi/perusahaan merespons kebocoran data dengan sekadar "mencabut" (Revoke) *seed* tanpa harus meminta subjek mendaftarkan wajah barunya, menjadikannya standar keamanan paripurna untuk era *Smart City* di Indonesia.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
 </main>
+
+<!-- Terminal Attacker Modal Popup -->
+<div id="hack-modal" style="display:none; position:fixed; inset:0; background:rgba(4,6,11,0.85); backdrop-filter:blur(8px); z-index:9999; justify-content:center; align-items:center;">
+  <div class="hud-card" style="width: 90%; max-width: 600px; padding: 30px; border-color: var(--c-red); box-shadow: 0 0 40px rgba(244,63,94,0.2);">
+    <div class="hud-bracket-tl" style="border-color: var(--c-red);"></div>
+    <div class="hud-bracket-tr" style="border-color: var(--c-red);"></div>
+    <div class="hud-bracket-bl" style="border-color: var(--c-red);"></div>
+    <div class="hud-bracket-br" style="border-color: var(--c-red);"></div>
+    
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:18px;">
+      <div class="chart-box-title" style="color: var(--c-red); font-size: 18px;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="20" height="20" style="vertical-align:middle; margin-right:8px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="2" y1="2" x2="22" y2="22"></line></svg>
+        Terminal Attacker (Deep Reconstruction)
+      </div>
+      <button onclick="document.getElementById('hack-modal').style.display='none'" style="background:transparent; border:none; color:var(--txt3); cursor:pointer; font-size:24px; line-height:1;">&times;</button>
+    </div>
+    
+    <div style="font-size:13px; color:var(--txt2); margin-bottom: 20px;">Mensimulasikan upaya <i>adversary</i> mengembalikan representasi biner curian menjadi vektor wajah kontinu menggunakan jaringan <strong>TemplateDecoder</strong> (Inverse Network)...</div>
+    
+    <div class="sim-output-box" id="hack-out" style="border-color: rgba(244,63,94,0.3); background: rgba(0,0,0,0.5); min-height: 150px;">
+      <span style="color:var(--txt3)">Mengeksekusi model Inverse Generator...</span>
+    </div>
+    
+    <button class="btn-secondary" onclick="document.getElementById('hack-modal').style.display='none'" style="width:100%; margin-top:20px; text-align:center; justify-content:center;">Tutup Terminal</button>
+  </div>
+</div>
 
 <!-- Custom Toast Notification -->
 <div id="toast-container" style="position: fixed; bottom: 30px; right: 30px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;"></div>

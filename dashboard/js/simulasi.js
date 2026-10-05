@@ -2,22 +2,6 @@
   'use strict';
 
   let currentBinaryString = "";
-  let faceApiLoaded = false;
-
-  async function initFaceAPI() {
-    try {
-      await faceapi.nets.tinyFaceDetector.loadFromUri('./models');
-      faceApiLoaded = true;
-      console.log('FaceAPI TinyFaceDetector loaded successfully.');
-    } catch (e) {
-      console.error('Failed to load FaceAPI models:', e);
-    }
-  }
-  
-  // Call init on script load
-  if (typeof faceapi !== 'undefined') {
-    initFaceAPI();
-  }
 
   window.seededRandom = function(seedStr) {
     let hash = 0;
@@ -93,23 +77,6 @@
     if (!fileInput || !fileInput.files || fileInput.files.length === 0) {
         window.showToast("Peringatan: Silakan upload Citra Uji Wajah (CCTV) terlebih dahulu sebelum Enroll!", "error");
         return;
-    }
-
-    // FACE DETECTION CHECK
-    const previewImg = document.getElementById('sim-img-preview');
-    
-    // Lazy load faceapi models if not yet loaded
-    if (!faceApiLoaded && typeof faceapi !== 'undefined') {
-        window.showToast("Memuat modul AI Pendeteksi Wajah (RetinaFace)...", "info");
-        await initFaceAPI();
-    }
-
-    if (faceApiLoaded && previewImg && previewImg.src) {
-        const detection = await faceapi.detectSingleFace(previewImg, new faceapi.TinyFaceDetectorOptions({ scoreThreshold: 0.15 }));
-        if (!detection) {
-            window.showToast("Gagal: Tidak ada wajah manusia yang terdeteksi pada gambar ini! (Disimulasikan oleh RetinaFace)", "error");
-            return;
-        }
     }
 
     // Reset UI stages

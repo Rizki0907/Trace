@@ -223,7 +223,9 @@
         message: "Inverse Reconstruction Failed (Non-Invertible Property: Active)",
         reconstructed_vector: Array.from({length: 50}, () => (Math.random() * 2 - 1)),
         simulated_cos_sim: 0.0125,
-        inferred_gender_accuracy: 52.70
+        inferred_gender_accuracy: 52.70,
+        inferred_age_accuracy: 39.57,
+        reid_accuracy: 0.09
       };
 
       // Simulate hack loading bar
@@ -245,7 +247,14 @@
         }).join(', ');
         
         resultHtml += `<div style="font-family:var(--font-mono); font-size:10px; word-break:break-all; color:var(--c-amber); line-height:1.6; background:rgba(0,0,0,0.4); padding:10px; border-radius:4px; border:1px solid rgba(244,63,94,0.3);">${vecStr}...</div>`;
-        resultHtml += `<div style="margin-top:12px; padding:10px; border-left:3px solid var(--c-green); background:rgba(16,185,129,0.1); color:var(--txt2); font-size:12px; line-height: 1.5;"><strong>ANALISIS KESIMPULAN (Keluaran Real PyTorch):</strong> Cosine Similarity sangat rendah (<strong>~${data.simulated_cos_sim}</strong>). Akurasi tebakan gender acak (<strong>~${data.inferred_gender_accuracy}%</strong>). Identitas Wajah: <strong>AMAN 100%</strong>.</div>`;
+        resultHtml += `<div style="margin-top:12px; padding:10px; border-left:3px solid var(--c-green); background:rgba(16,185,129,0.1); color:var(--txt2); font-size:12px; line-height: 1.5;">
+          <strong>ANALISIS KESIMPULAN (Simulasi Keluaran PyTorch):</strong><br>
+          • Cosine Similarity (Kualitas Wajah): <strong style="color:var(--c-green);">~${data.simulated_cos_sim}</strong> (Sangat Rendah/Hancur)<br>
+          • Akurasi Tebakan Gender: <strong style="color:var(--c-green);">~${data.inferred_gender_accuracy}%</strong> (Setara Tebak Acak)<br>
+          • Akurasi Tebakan Usia: <strong style="color:var(--c-green);">~${data.inferred_age_accuracy}%</strong> (Terproteksi Lapisan GRL)<br>
+          • Re-identifikasi Lintas CCTV: <strong style="color:var(--c-green);">~${data.reid_accuracy}%</strong> (Kemungkinan Mustahil)<br>
+          Kesimpulan: Identitas Subjek <strong style="color:var(--c-cyan);">AMAN 100%</strong>.
+        </div>`;
 
         hackOut.innerHTML = resultHtml;
       }, 1400);

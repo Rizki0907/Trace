@@ -898,7 +898,8 @@
     </div>
 
     <div class="sim-container scroll-reveal">
-      <div class="hud-card sim-panel">
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div class="hud-card sim-panel" style="height:100%;">
         <div class="hud-bracket-tl"></div>
         <div class="hud-bracket-tr"></div>
         <div class="hud-bracket-bl"></div>
@@ -959,9 +960,9 @@
         <div class="hud-bracket-br"></div>
         <div class="chart-box-title" style="margin-bottom:18px; color: var(--c-red);">Terminal Attacker (Deep Reconstruction)</div>
         <div style="font-size:12px; color:var(--txt2); margin-bottom: 15px;">Mencoba mengembalikan representasi biner curian menjadi vektor wajah kontinu menggunakan jaringan TemplateDecoder...</div>
-        <div class="sim-output-box" id="hack-out" style="border-color: rgba(244,63,94,0.3); background: rgba(0,0,0,0.5); min-height: 120px;">
           <span style="color:var(--txt3)">Mengeksekusi model Inverse Generator...</span>
         </div>
+      </div>
       </div>
 
       <div class="hud-card sim-panel">

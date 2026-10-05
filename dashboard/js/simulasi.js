@@ -97,6 +97,13 @@
 
     // FACE DETECTION CHECK
     const previewImg = document.getElementById('sim-img-preview');
+    
+    // Lazy load faceapi models if not yet loaded
+    if (!faceApiLoaded && typeof faceapi !== 'undefined') {
+        window.showToast("Memuat modul AI Pendeteksi Wajah (RetinaFace)...", "info");
+        await initFaceAPI();
+    }
+
     if (faceApiLoaded && previewImg && previewImg.src) {
         const detection = await faceapi.detectSingleFace(previewImg, new faceapi.TinyFaceDetectorOptions({ scoreThreshold: 0.15 }));
         if (!detection) {

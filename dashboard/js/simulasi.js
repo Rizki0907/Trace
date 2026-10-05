@@ -2,6 +2,32 @@
   'use strict';
 
   let currentBinaryString = "";
+  let faceApiLoaded = false;
+
+  async function initFaceAPI() {
+    try {
+      await faceapi.nets.tinyFaceDetector.loadFromUri('./models');
+      faceApiLoaded = true;
+      console.log('FaceAPI TinyFaceDetector loaded successfully.');
+    } catch (e) {
+      console.error('Failed to load FaceAPI models:', e);
+    }
+  }
+  
+  // Call init on script load
+  if (typeof faceapi !== 'undefined') {
+    initFaceAPI();
+  }
+
+  window.seededRandom = function(seedStr) {
+    let hash = 0;
+    for (let i = 0; i < seedStr.length; i++) {
+        hash = ((hash << 5) - hash) + seedStr.charCodeAt(i);
+        hash |= 0;
+    }
+    const x = Math.sin(hash++) * 10000;
+    return x - Math.floor(x);
+  };
 
   window.showToast = function(message, type = 'error') {
     const container = document.getElementById('toast-container');
@@ -67,6 +93,16 @@
     if (!fileInput || !fileInput.files || fileInput.files.length === 0) {
         window.showToast("Peringatan: Silakan upload Citra Uji Wajah (CCTV) terlebih dahulu sebelum Enroll!", "error");
         return;
+    }
+
+    // FACE DETECTION CHECK
+    const previewImg = document.getElementById('sim-img-preview');
+    if (faceApiLoaded && previewImg && previewImg.src) {
+        const detection = await faceapi.detectSingleFace(previewImg, new faceapi.TinyFaceDetectorOptions({ scoreThreshold: 0.15 }));
+        if (!detection) {
+            window.showToast("Gagal: Tidak ada wajah manusia yang terdeteksi pada gambar ini! (Disimulasikan oleh RetinaFace)", "error");
+            return;
+        }
     }
 
     // Reset UI stages
@@ -219,13 +255,20 @@
       // SMART PROTOTYPE: Simulasi Deep Attacker di browser
       await new Promise(r => setTimeout(r, 1500));
       
+      const seedHashStr = currentBinaryString.substring(0, 32); // Use first 32 chars of hash as seed
+      
+      const dynCosSim = (0.0125 + (window.seededRandom(seedHashStr) * 0.005 - 0.0025)).toFixed(4);
+      const dynGenderAcc = (52.70 + (window.seededRandom(seedHashStr + "gender") * 4 - 2)).toFixed(2);
+      const dynAgeAcc = (39.57 + (window.seededRandom(seedHashStr + "age") * 5 - 2.5)).toFixed(2);
+      const dynReidAcc = (0.09 + (window.seededRandom(seedHashStr + "reid") * 0.04 - 0.02)).toFixed(2);
+
       const data = {
         message: "Inverse Reconstruction Failed (Non-Invertible Property: Active)",
-        reconstructed_vector: Array.from({length: 50}, () => (Math.random() * 2 - 1)),
-        simulated_cos_sim: 0.0125,
-        inferred_gender_accuracy: 52.70,
-        inferred_age_accuracy: 39.57,
-        reid_accuracy: 0.09
+        reconstructed_vector: Array.from({length: 50}, (_, i) => (window.seededRandom(seedHashStr + i) * 2 - 1)),
+        simulated_cos_sim: dynCosSim,
+        inferred_gender_accuracy: dynGenderAcc,
+        inferred_age_accuracy: dynAgeAcc,
+        reid_accuracy: dynReidAcc
       };
 
       // Simulate hack loading bar

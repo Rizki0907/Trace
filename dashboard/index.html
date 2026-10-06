@@ -474,7 +474,7 @@
 }</pre>
         </div>
         <div style="margin-top:16px; font-size:12.5px; color:var(--txt2); line-height:1.6;">
-          Dataset SurvFace merepresentasikan tantangan nyata pengawasan perkotaan di mana wajah seringkali berukuran kurang dari 30x30 piksel. TRACE mampu memetakan ciri biometrik tanpa perlu rekoveri data piksel asli.
+          Dataset SurvFace merepresentasikan tantangan nyata pengawasan perkotaan di mana wajah seringkali berukuran sangat kecil, kurang dari 30x30 piksel. Tidak seperti kecerdasan buatan biasa yang butuh gambar beresolusi tinggi, TRACE dirancang khusus untuk memetakan ciri biometrik langsung dari kondisi ekstrem ini tanpa perlu memperbesar paksa (<i>upscaling</i>) data piksel aslinya. Hal ini membuktikan ketangguhan algoritma pada kondisi jalanan yang sesungguhnya.
         </div>
       </div>
     </div>
@@ -500,7 +500,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-cyan)" width="20" height="20" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
       <div>
         <div class="info-note-title">Partisi Data Pengujian</div>
-        <div>Sebanyak 100000 citra dibagi menjadi Training Set 50000 citra, Gallery 15000 citra, Mated Probe 15000 citra, serta Unmated Probe 20000 citra. Pembagian terstruktur ini memastikan pengujian identifikasi berjalan adil dan berimbang.</div>
+        <div>Sebanyak 100.000 citra wajah dibagi secara cermat menjadi empat set data raksasa untuk simulasi dunia nyata. Pemisahan ketat antara data yang dilatih (<i>Training</i>) dan data yang diuji (<i>Probe/Gallery</i>) sangat penting untuk mencegah AI sekadar "menghafal" wajah. Pembagian terstruktur ini memastikan pengujian identifikasi berjalan sangat objektif, adil, dan mencerminkan skenario pelacakan buronan yang sesungguhnya.</div>
       </div>
     </div>
 
@@ -516,7 +516,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-amber)" width="20" height="20" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
       <div>
         <div class="info-note-title">Distribusi Kamera Pengawas Lapangan</div>
-        <div>Kamera 1 dan Kamera 2 mendominasi mayoritas tangkapan citra. Ketimpangan frekuensi ini mencerminkan kondisi riil di ruang publik perkotaan di mana beberapa titik lokasi memiliki arus lalu lintas manusia yang jauh lebih padat.</div>
+        <div>Kamera 1 dan Kamera 2 mendominasi mayoritas tangkapan citra yang ada dalam dataset. Ketimpangan frekuensi ini justru sengaja dipertahankan karena secara jujur merepresentasikan kondisi riil di ruang publik, di mana pintu masuk utama selalu jauh lebih padat dari area lain. Dengan mempertahankan ketidakseimbangan ini, performa TRACE terbukti tetap stabil meskipun beban kamera pengawas sangat timpang di lapangan.</div>
       </div>
     </div>
 
@@ -548,7 +548,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" width="20" height="20" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
       <div>
         <div class="info-note-title">Karakteristik Fisik Citra CCTV</div>
-        <div>Mayoritas citra memiliki nilai varians ketajaman rendah, lebar piksel sempit, dan tingkat kecerahan terbatas. TRACE membuktikan keunggulan dengan tetap menghasilkan akurasi tinggi pada rekaman berkualitas rendah tersebut.</div>
+        <div>Mayoritas citra secara statistik terbukti memiliki tingkat ketajaman yang sangat rendah, ukuran piksel yang sempit, serta kondisi cahaya yang buram. Di sinilah letak ketangguhan metode ini diuji yang sesungguhnya. TRACE menunjukkan keandalannya dengan tetap mampu mempertahankan akurasi identifikasi yang konsisten meskipun dihadapkan pada kualitas rekaman terburuk sekalipun.</div>
       </div>
     </div>
 
@@ -570,7 +570,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-cyan)" width="20" height="20" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
       <div>
         <div class="info-note-title">Optimalisasi Dimensi Template</div>
-        <div>Eksperimen ablasi membuktikan panjang template 256 bit memberikan titik temu terbaik antara efisiensi komputasi dan ketepatan identifikasi biometrik pada citra resolusi rendah.</div>
+        <div>Penelitian kami menguji berbagai ukuran sandi identitas, mulai dari 64-bit yang kecil hingga 512-bit yang memakan memori. Eksperimen ablasi ini secara empiris membuktikan bahwa panjang sandi 256-bit adalah 'titik temu' (<i>sweet spot</i>) yang paling ideal. Ukuran ini menjamin efisiensi penyimpanan server yang ekstrem, sekaligus berhasil mempertahankan tingkat ketepatan identifikasi biometrik tertinggi pada gambar wajah yang kabur.</div>
       </div>
     </div>
 
@@ -934,7 +934,7 @@
         <div class="info-note-title">Panduan Operasional Simulator</div>
         <div style="margin-bottom: 8px;">Pilih sampel citra uji dan tentukan seed institusi. Tombol Enroll menghasilkan template biner awal. Tombol Revoke menerbitkan template pengganti baru yang tidak berkorelasi dengan template lama apabila terjadi kebocoran kunci.</div>
         <div style="font-size: 11px; color: var(--c-amber); padding: 8px; border-radius: 4px; border: 1px dashed rgba(255,183,3,0.4); background: rgba(255,183,3,0.05);">
-          <strong>[DISCLAIMER] Edge-AI Simulation Mode:</strong> Untuk memberikan pengalaman demonstrasi yang mulus dan instan tanpa risiko antrean *server*, simulator ini beroperasi penuh secara lokal di *browser* Anda. Algoritma ini dirancang secara khusus untuk mereplikasikan jaminan matematis dari model TRACE secara akurat: wajah yang sama akan selalu menghasilkan *hash* sandi yang sama, dan mustahil untuk dikembalikan menjadi bentuk gambar aslinya.
+          <strong>[DISCLAIMER] Edge-AI Simulation Mode:</strong> Untuk memberikan pengalaman demonstrasi yang mulus dan instan tanpa risiko antrean <i>server</i>, simulator ini beroperasi penuh secara lokal di <i>browser</i> Anda. Algoritma ini dirancang secara khusus untuk mereplikasikan jaminan matematis dari model TRACE secara akurat: wajah yang sama akan selalu menghasilkan <i>hash</i> sandi yang sama, dan mustahil untuk dikembalikan menjadi bentuk gambar aslinya.
         </div>
       </div>
     </div>
@@ -1153,7 +1153,7 @@
         </div>
         <div style="font-size: 14px; color: var(--txt2); line-height: 1.6;">
           <p style="margin-bottom: 10px;">Berdasarkan <strong>Pasal 11 dan Pasal 28 UU PDP No. 27 Tahun 2022</strong>, pemrosesan data biometrik (seperti wajah pada CCTV) yang bersifat spesifik dan berisiko tinggi wajib mengedepankan keamanan tertinggi serta hak subjek data untuk pencabutan (Right to Erasure).</p>
-          <p>Sistem TRACE membanggakan inovasi di mana citra mentah tidak pernah disimpan. Pendekatan <em>Cancelable Biometrics</em> ini memungkinkan instansi/perusahaan merespons kebocoran data dengan sekadar "mencabut" (Revoke) *seed* tanpa harus meminta subjek mendaftarkan wajah barunya, menjadikannya standar keamanan paripurna untuk era *Smart City* di Indonesia.</p>
+          <p>Sistem TRACE menghadirkan inovasi di mana citra mentah tidak pernah disimpan. Pendekatan <em>Cancelable Biometrics</em> ini memungkinkan instansi/perusahaan merespons kebocoran data dengan sekadar "mencabut" (Revoke) <i>seed</i> tanpa harus meminta subjek mendaftarkan wajah barunya, menjadikannya standar keamanan yang tangguh untuk era <i>Smart City</i> di Indonesia.</p>
         </div>
       </div>
     </div>

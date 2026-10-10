@@ -1,0 +1,1202 @@
+[
+ {
+  "file": "mated_00_10339_cam2.jpg",
+  "kind": "mated",
+  "identity": "10339",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 24,
+  "height": 31,
+  "gender": 1,
+  "age": 62.0,
+  "age_bucket": 3,
+  "quality_score": 0.42331297876973406,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "10339",
+   "4361",
+   "10384",
+   "8367",
+   "10373"
+  ],
+  "notebook_top5_scores": [
+   0.490172,
+   0.48553,
+   0.431048,
+   0.39378,
+   0.388184
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_01_9985_cam3.jpg",
+  "kind": "mated",
+  "identity": "9985",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 24,
+  "height": 32,
+  "gender": 1,
+  "age": 30.0,
+  "age_bucket": 1,
+  "quality_score": 0.16579447694332625,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "9985",
+   "4639",
+   "137",
+   "8974",
+   "4323"
+  ],
+  "notebook_top5_scores": [
+   0.481965,
+   0.44678,
+   0.403864,
+   0.373708,
+   0.360085
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_02_9549_cam3.jpg",
+  "kind": "mated",
+  "identity": "9549",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 24,
+  "height": 31,
+  "gender": 0,
+  "age": 42.0,
+  "age_bucket": 2,
+  "quality_score": 0.8762428681248907,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "9549",
+   "9926",
+   "3165",
+   "8580",
+   "3801"
+  ],
+  "notebook_top5_scores": [
+   0.736898,
+   0.466861,
+   0.464752,
+   0.462033,
+   0.438165
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_03_10041_cam2.jpg",
+  "kind": "mated",
+  "identity": "10041",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 30,
+  "height": 37,
+  "gender": 0,
+  "age": 27.0,
+  "age_bucket": 1,
+  "quality_score": 0.17257995681807656,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "10041",
+   "9880",
+   "9210",
+   "6902",
+   "9923"
+  ],
+  "notebook_top5_scores": [
+   0.615513,
+   0.489452,
+   0.462939,
+   0.436836,
+   0.432749
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_04_8874_cam2.jpg",
+  "kind": "mated",
+  "identity": "8874",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 27,
+  "height": 32,
+  "gender": 1,
+  "age": 34.0,
+  "age_bucket": 1,
+  "quality_score": 0.5580622036731206,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "8874",
+   "1707",
+   "8764",
+   "9724",
+   "9502"
+  ],
+  "notebook_top5_scores": [
+   0.648892,
+   0.395402,
+   0.378309,
+   0.361253,
+   0.353552
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_05_10375_cam2.jpg",
+  "kind": "mated",
+  "identity": "10375",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 24,
+  "height": 29,
+  "gender": 1,
+  "age": 33.0,
+  "age_bucket": 1,
+  "quality_score": 0.5711002637084035,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "10375",
+   "9922",
+   "10185",
+   "9767",
+   "9252"
+  ],
+  "notebook_top5_scores": [
+   0.63826,
+   0.604561,
+   0.439546,
+   0.432516,
+   0.422232
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_06_8999_cam2.jpg",
+  "kind": "mated",
+  "identity": "8999",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 23,
+  "height": 30,
+  "gender": 0,
+  "age": 35.0,
+  "age_bucket": 2,
+  "quality_score": 0.4679247291370434,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "8999",
+   "10497",
+   "10194",
+   "9104",
+   "5826"
+  ],
+  "notebook_top5_scores": [
+   0.504371,
+   0.410235,
+   0.385946,
+   0.359627,
+   0.350904
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_07_10570_cam2.jpg",
+  "kind": "mated",
+  "identity": "10570",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 24,
+  "height": 29,
+  "gender": 1,
+  "age": 32.0,
+  "age_bucket": 1,
+  "quality_score": 0.5808964485115986,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "10570",
+   "9674",
+   "10531",
+   "5389",
+   "577"
+  ],
+  "notebook_top5_scores": [
+   0.486139,
+   0.435791,
+   0.409968,
+   0.39836,
+   0.391096
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_08_9333_cam1.jpg",
+  "kind": "mated",
+  "identity": "9333",
+  "camera": "cam1",
+  "in_gallery": true,
+  "width": 27,
+  "height": 33,
+  "gender": 1,
+  "age": 34.0,
+  "age_bucket": 1,
+  "quality_score": 0.0,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "1275",
+   "8367",
+   "9078",
+   "2280",
+   "8519"
+  ],
+  "notebook_top5_scores": [
+   0.355555,
+   0.353448,
+   0.344875,
+   0.344757,
+   0.336219
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_09_10174_cam2.jpg",
+  "kind": "mated",
+  "identity": "10174",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 24,
+  "height": 29,
+  "gender": 1,
+  "age": 44.0,
+  "age_bucket": 2,
+  "quality_score": 0.38098986931830237,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "9390",
+   "10174",
+   "9092",
+   "9745",
+   "9714"
+  ],
+  "notebook_top5_scores": [
+   0.569407,
+   0.557852,
+   0.498265,
+   0.445789,
+   0.441462
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_10_9887_cam2.jpg",
+  "kind": "mated",
+  "identity": "9887",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 24,
+  "height": 29,
+  "gender": 1,
+  "age": 40.0,
+  "age_bucket": 2,
+  "quality_score": 0.5945228671700492,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "8918",
+   "9338",
+   "9887",
+   "1894",
+   "6773"
+  ],
+  "notebook_top5_scores": [
+   0.474069,
+   0.449938,
+   0.432543,
+   0.426582,
+   0.411757
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_11_9819_cam2.jpg",
+  "kind": "mated",
+  "identity": "9819",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 33,
+  "height": 35,
+  "gender": 0,
+  "age": 25.0,
+  "age_bucket": 1,
+  "quality_score": 0.45815188100345605,
+  "quality_bin": "Resolusi Rendah",
+  "notebook_top5_ids": [
+   "5941",
+   "3306",
+   "8452",
+   "6648",
+   "6921"
+  ],
+  "notebook_top5_scores": [
+   0.464606,
+   0.438524,
+   0.389399,
+   0.388698,
+   0.387959
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_12_9156_cam2.jpg",
+  "kind": "mated",
+  "identity": "9156",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 24,
+  "height": 31,
+  "gender": 0,
+  "age": 31.0,
+  "age_bucket": 1,
+  "quality_score": 0.9486818124305044,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "9156",
+   "9345",
+   "10568",
+   "9719",
+   "2070"
+  ],
+  "notebook_top5_scores": [
+   0.620472,
+   0.393573,
+   0.392569,
+   0.373831,
+   0.356865
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_13_9332_cam2.jpg",
+  "kind": "mated",
+  "identity": "9332",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 24,
+  "height": 32,
+  "gender": 1,
+  "age": 30.0,
+  "age_bucket": 1,
+  "quality_score": 0.7654365171408739,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "9332",
+   "10375",
+   "9922",
+   "9713",
+   "9661"
+  ],
+  "notebook_top5_scores": [
+   0.549651,
+   0.436088,
+   0.429312,
+   0.422761,
+   0.410955
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_14_9435_cam2.jpg",
+  "kind": "mated",
+  "identity": "9435",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 28,
+  "height": 32,
+  "gender": 1,
+  "age": 68.0,
+  "age_bucket": 3,
+  "quality_score": 0.5405874309218367,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "9435",
+   "9365",
+   "9245",
+   "9193",
+   "10291"
+  ],
+  "notebook_top5_scores": [
+   0.498576,
+   0.402418,
+   0.401236,
+   0.388996,
+   0.385859
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_15_9391_cam3.jpg",
+  "kind": "mated",
+  "identity": "9391",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 23,
+  "height": 30,
+  "gender": 1,
+  "age": 31.0,
+  "age_bucket": 1,
+  "quality_score": 0.6388726977396442,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "9391",
+   "10044",
+   "9643",
+   "9295",
+   "9855"
+  ],
+  "notebook_top5_scores": [
+   0.595333,
+   0.476513,
+   0.462979,
+   0.457534,
+   0.442508
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_16_5349_cam1.jpg",
+  "kind": "mated",
+  "identity": "5349",
+  "camera": "cam1",
+  "in_gallery": true,
+  "width": 19,
+  "height": 23,
+  "gender": 1,
+  "age": 29.0,
+  "age_bucket": 1,
+  "quality_score": 0.6119836379195686,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "5349",
+   "6557",
+   "8034",
+   "8011",
+   "2973"
+  ],
+  "notebook_top5_scores": [
+   0.620516,
+   0.470222,
+   0.456605,
+   0.4475,
+   0.397834
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_17_9057_cam2.jpg",
+  "kind": "mated",
+  "identity": "9057",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 26,
+  "height": 32,
+  "gender": 0,
+  "age": 51.0,
+  "age_bucket": 3,
+  "quality_score": 0.6991515898853321,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "9057",
+   "8212",
+   "9540",
+   "9911",
+   "7125"
+  ],
+  "notebook_top5_scores": [
+   0.56862,
+   0.526047,
+   0.522938,
+   0.490384,
+   0.484051
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_18_10148_cam2.jpg",
+  "kind": "mated",
+  "identity": "10148",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 25,
+  "height": 32,
+  "gender": 1,
+  "age": 59.0,
+  "age_bucket": 3,
+  "quality_score": 0.4009674312477463,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "10148",
+   "3829",
+   "2814",
+   "1460",
+   "10306"
+  ],
+  "notebook_top5_scores": [
+   0.40924,
+   0.311538,
+   0.294107,
+   0.288902,
+   0.288804
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_19_9041_cam2.jpg",
+  "kind": "mated",
+  "identity": "9041",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 23,
+  "height": 27,
+  "gender": 1,
+  "age": 48.0,
+  "age_bucket": 2,
+  "quality_score": 0.2519257316804005,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "9041",
+   "5955",
+   "1262",
+   "10186",
+   "1776"
+  ],
+  "notebook_top5_scores": [
+   0.476547,
+   0.413904,
+   0.384993,
+   0.352688,
+   0.343628
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_20_9052_cam3.jpg",
+  "kind": "mated",
+  "identity": "9052",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 24,
+  "height": 32,
+  "gender": 1,
+  "age": 44.0,
+  "age_bucket": 2,
+  "quality_score": 0.3812281778973549,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "10603",
+   "9829",
+   "10044",
+   "9992",
+   "10624"
+  ],
+  "notebook_top5_scores": [
+   0.509554,
+   0.507724,
+   0.507657,
+   0.505903,
+   0.451177
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_21_10301_cam2.jpg",
+  "kind": "mated",
+  "identity": "10301",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 26,
+  "height": 31,
+  "gender": 1,
+  "age": 40.0,
+  "age_bucket": 2,
+  "quality_score": 0.7473857404738616,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "3966",
+   "4072",
+   "9058",
+   "9862",
+   "3532"
+  ],
+  "notebook_top5_scores": [
+   0.437888,
+   0.430196,
+   0.405594,
+   0.388241,
+   0.372696
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_22_9399_cam1.jpg",
+  "kind": "mated",
+  "identity": "9399",
+  "camera": "cam1",
+  "in_gallery": true,
+  "width": 23,
+  "height": 30,
+  "gender": 1,
+  "age": 34.0,
+  "age_bucket": 1,
+  "quality_score": 0.5333220393003308,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "8683",
+   "3817",
+   "8726",
+   "8344",
+   "10002"
+  ],
+  "notebook_top5_scores": [
+   0.573457,
+   0.454908,
+   0.454465,
+   0.425878,
+   0.405627
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_23_9615_cam3.jpg",
+  "kind": "mated",
+  "identity": "9615",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 33,
+  "height": 38,
+  "gender": 1,
+  "age": 43.0,
+  "age_bucket": 2,
+  "quality_score": 0.8546215810079036,
+  "quality_bin": "Resolusi Sedang",
+  "notebook_top5_ids": [
+   "9629",
+   "9390",
+   "9683",
+   "9268",
+   "10174"
+  ],
+  "notebook_top5_scores": [
+   0.502025,
+   0.478177,
+   0.43817,
+   0.421353,
+   0.419449
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_24_5578_cam2.jpg",
+  "kind": "mated",
+  "identity": "5578",
+  "camera": "cam2",
+  "in_gallery": true,
+  "width": 12,
+  "height": 14,
+  "gender": 1,
+  "age": 30.0,
+  "age_bucket": 1,
+  "quality_score": 0.5750971488395633,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "5578",
+   "6377",
+   "7432",
+   "9341",
+   "2898"
+  ],
+  "notebook_top5_scores": [
+   0.756662,
+   0.419304,
+   0.409786,
+   0.403483,
+   0.400673
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_25_9197_cam1.jpg",
+  "kind": "mated",
+  "identity": "9197",
+  "camera": "cam1",
+  "in_gallery": true,
+  "width": 26,
+  "height": 32,
+  "gender": 1,
+  "age": 46.0,
+  "age_bucket": 2,
+  "quality_score": 0.6548396470852178,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "9197",
+   "5703",
+   "9553",
+   "9888",
+   "9147"
+  ],
+  "notebook_top5_scores": [
+   0.570149,
+   0.431572,
+   0.423333,
+   0.405504,
+   0.401212
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_26_5789_cam1.jpg",
+  "kind": "mated",
+  "identity": "5789",
+  "camera": "cam1",
+  "in_gallery": true,
+  "width": 12,
+  "height": 15,
+  "gender": 0,
+  "age": 31.0,
+  "age_bucket": 1,
+  "quality_score": 0.645443754803058,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "5789",
+   "9214",
+   "9926",
+   "5756",
+   "10194"
+  ],
+  "notebook_top5_scores": [
+   0.638475,
+   0.477,
+   0.464361,
+   0.459908,
+   0.43459
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_27_9534_cam3.jpg",
+  "kind": "mated",
+  "identity": "9534",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 22,
+  "height": 29,
+  "gender": 1,
+  "age": 44.0,
+  "age_bucket": 2,
+  "quality_score": 0.39261015803765525,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "9534",
+   "9739",
+   "10347",
+   "1894",
+   "3587"
+  ],
+  "notebook_top5_scores": [
+   0.530335,
+   0.441192,
+   0.429921,
+   0.406711,
+   0.398429
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_28_9652_cam3.jpg",
+  "kind": "mated",
+  "identity": "9652",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 24,
+  "height": 30,
+  "gender": 0,
+  "age": 42.0,
+  "age_bucket": 2,
+  "quality_score": 0.9539438196034546,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "9652",
+   "10339",
+   "2029",
+   "1769",
+   "9365"
+  ],
+  "notebook_top5_scores": [
+   0.507359,
+   0.423868,
+   0.401029,
+   0.396511,
+   0.393167
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_29_9108_cam3.jpg",
+  "kind": "mated",
+  "identity": "9108",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 27,
+  "height": 32,
+  "gender": 1,
+  "age": 36.0,
+  "age_bucket": 2,
+  "quality_score": 0.5079663359480068,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "9108",
+   "9092",
+   "3594",
+   "9354",
+   "9406"
+  ],
+  "notebook_top5_scores": [
+   0.505813,
+   0.387865,
+   0.38675,
+   0.385621,
+   0.384127
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_30_9127_cam3.jpg",
+  "kind": "mated",
+  "identity": "9127",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 24,
+  "height": 30,
+  "gender": 0,
+  "age": 30.0,
+  "age_bucket": 1,
+  "quality_score": 0.3271159320582325,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "9127",
+   "5927",
+   "8072",
+   "9181",
+   "5628"
+  ],
+  "notebook_top5_scores": [
+   0.431271,
+   0.352035,
+   0.351536,
+   0.349169,
+   0.348757
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_31_5739_cam1.jpg",
+  "kind": "mated",
+  "identity": "5739",
+  "camera": "cam1",
+  "in_gallery": true,
+  "width": 11,
+  "height": 14,
+  "gender": 1,
+  "age": 27.0,
+  "age_bucket": 1,
+  "quality_score": 0.17971301579545415,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "5739",
+   "5613",
+   "10469",
+   "4361",
+   "5647"
+  ],
+  "notebook_top5_scores": [
+   0.738958,
+   0.415672,
+   0.399522,
+   0.374418,
+   0.372652
+  ],
+  "notebook_rank1_correct": true
+ },
+ {
+  "file": "mated_32_8577_cam1.jpg",
+  "kind": "mated",
+  "identity": "8577",
+  "camera": "cam1",
+  "in_gallery": true,
+  "width": 24,
+  "height": 31,
+  "gender": 1,
+  "age": 47.0,
+  "age_bucket": 2,
+  "quality_score": 0.958154029349734,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "8524",
+   "6233",
+   "4026",
+   "1948",
+   "2738"
+  ],
+  "notebook_top5_scores": [
+   0.483383,
+   0.470297,
+   0.445531,
+   0.431115,
+   0.424351
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_33_9412_cam3.jpg",
+  "kind": "mated",
+  "identity": "9412",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 23,
+  "height": 30,
+  "gender": 0,
+  "age": 37.0,
+  "age_bucket": 2,
+  "quality_score": 0.036134842406847265,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "10482",
+   "9338",
+   "9191",
+   "9922",
+   "9290"
+  ],
+  "notebook_top5_scores": [
+   0.458129,
+   0.446384,
+   0.424732,
+   0.40454,
+   0.394591
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_34_1614_cam1.jpg",
+  "kind": "mated",
+  "identity": "1614",
+  "camera": "cam1",
+  "in_gallery": true,
+  "width": 14,
+  "height": 17,
+  "gender": 1,
+  "age": 22.0,
+  "age_bucket": 1,
+  "quality_score": 0.5713295121686672,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "31",
+   "4502",
+   "5017",
+   "9182",
+   "4818"
+  ],
+  "notebook_top5_scores": [
+   0.527575,
+   0.493371,
+   0.463321,
+   0.456913,
+   0.45191
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "mated_35_9534_cam3.jpg",
+  "kind": "mated",
+  "identity": "9534",
+  "camera": "cam3",
+  "in_gallery": true,
+  "width": 19,
+  "height": 23,
+  "gender": 1,
+  "age": 41.0,
+  "age_bucket": 2,
+  "quality_score": 0.5941879173239154,
+  "quality_bin": "Resolusi Tinggi",
+  "notebook_top5_ids": [
+   "984",
+   "9245",
+   "9031",
+   "7261",
+   "5528"
+  ],
+  "notebook_top5_scores": [
+   0.430558,
+   0.412549,
+   0.378204,
+   0.375349,
+   0.374794
+  ],
+  "notebook_rank1_correct": false
+ },
+ {
+  "file": "unmated_36_distractors_15896.jpg",
+  "kind": "unmated",
+  "identity": "distractors",
+  "camera": "15896",
+  "in_gallery": false,
+  "width": 23,
+  "height": 27,
+  "gender": 1,
+  "age": 40.0,
+  "age_bucket": 2,
+  "quality_score": 0.7727892153616179
+ },
+ {
+  "file": "unmated_37_8381_cam1.jpg",
+  "kind": "unmated",
+  "identity": "8381",
+  "camera": "cam1",
+  "in_gallery": false,
+  "width": 24,
+  "height": 28,
+  "gender": 0,
+  "age": 37.0,
+  "age_bucket": 2,
+  "quality_score": 0.32771472354546005
+ },
+ {
+  "file": "unmated_38_5795_cam1.jpg",
+  "kind": "unmated",
+  "identity": "5795",
+  "camera": "cam1",
+  "in_gallery": false,
+  "width": 11,
+  "height": 13,
+  "gender": 0,
+  "age": 10.0,
+  "age_bucket": 0,
+  "quality_score": 0.1701123099188552
+ },
+ {
+  "file": "unmated_39_9152_cam4.jpg",
+  "kind": "unmated",
+  "identity": "9152",
+  "camera": "cam4",
+  "in_gallery": false,
+  "width": 31,
+  "height": 37,
+  "gender": 1,
+  "age": 5.0,
+  "age_bucket": 0,
+  "quality_score": 0.6649694089892756
+ },
+ {
+  "file": "unmated_40_5754_cam1.jpg",
+  "kind": "unmated",
+  "identity": "5754",
+  "camera": "cam1",
+  "in_gallery": false,
+  "width": 11,
+  "height": 13,
+  "gender": 0,
+  "age": 15.0,
+  "age_bucket": 0,
+  "quality_score": 0.7650428137971397
+ },
+ {
+  "file": "unmated_41_8794_cam1.jpg",
+  "kind": "unmated",
+  "identity": "8794",
+  "camera": "cam1",
+  "in_gallery": false,
+  "width": 25,
+  "height": 31,
+  "gender": 0,
+  "age": 35.0,
+  "age_bucket": 2,
+  "quality_score": 0.7749079104129409
+ },
+ {
+  "file": "unmated_42_9840_cam1.jpg",
+  "kind": "unmated",
+  "identity": "9840",
+  "camera": "cam1",
+  "in_gallery": false,
+  "width": 23,
+  "height": 24,
+  "gender": 0,
+  "age": 31.0,
+  "age_bucket": 1,
+  "quality_score": 0.0
+ },
+ {
+  "file": "unmated_43_distractors_14765.jpg",
+  "kind": "unmated",
+  "identity": "distractors",
+  "camera": "14765",
+  "in_gallery": false,
+  "width": 32,
+  "height": 38,
+  "gender": 1,
+  "age": 25.0,
+  "age_bucket": 1,
+  "quality_score": 0.999999999999856
+ },
+ {
+  "file": "unmated_44_8724_cam2.jpg",
+  "kind": "unmated",
+  "identity": "8724",
+  "camera": "cam2",
+  "in_gallery": false,
+  "width": 22,
+  "height": 28,
+  "gender": 1,
+  "age": 30.0,
+  "age_bucket": 1,
+  "quality_score": 0.999999999999856
+ },
+ {
+  "file": "unmated_45_distractors_8421.jpg",
+  "kind": "unmated",
+  "identity": "distractors",
+  "camera": "8421",
+  "in_gallery": false,
+  "width": 15,
+  "height": 18,
+  "gender": 1,
+  "age": 24.0,
+  "age_bucket": 1,
+  "quality_score": 0.908707470137822
+ },
+ {
+  "file": "unmated_46_9915_cam1.jpg",
+  "kind": "unmated",
+  "identity": "9915",
+  "camera": "cam1",
+  "in_gallery": false,
+  "width": 24,
+  "height": 31,
+  "gender": 0,
+  "age": 30.0,
+  "age_bucket": 1,
+  "quality_score": 0.3667597172896484
+ },
+ {
+  "file": "unmated_47_8640_cam1.jpg",
+  "kind": "unmated",
+  "identity": "8640",
+  "camera": "cam1",
+  "in_gallery": false,
+  "width": 28,
+  "height": 33,
+  "gender": 1,
+  "age": 34.0,
+  "age_bucket": 1,
+  "quality_score": 0.7740104095547351
+ }
+]

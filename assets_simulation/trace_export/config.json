@@ -1,0 +1,71 @@
+{
+  "embedding_dim": 512,
+  "template_dim": 256,
+  "hidden_dim": 256,
+  "institution_key_seed": 20260728,
+  "revocation_key_seed": 999,
+  "random_seed": 42,
+  "q_low": 17.72536039352417,
+  "q_high": 24.67256565093993,
+  "adaface_alpha_min": 0.02,
+  "adaface_alpha_max": 0.35,
+  "insightface_model": "buffalo_l",
+  "det_size": [
+    160,
+    160
+  ],
+  "age_bucket_labels": [
+    "Di Bawah 18",
+    "18 Sampai 34",
+    "35 Sampai 49",
+    "50 Ke Atas"
+  ],
+  "gender_labels": {
+    "0": "Perempuan",
+    "1": "Laki-laki"
+  },
+  "thresholds": {
+    "trace": 0.6803868602919789,
+    "rp": 0.7186494067592769,
+    "raw": 0.7062422636292717,
+    "target_fpir": 0.01
+  },
+  "architecture": {
+    "proposed_net": {
+      "class": "ProposedTransformNet",
+      "args": [
+        256,
+        256,
+        256
+      ],
+      "input": "RP(adaface_warp(arcface), rp_key)",
+      "output": "apply_cancellable_key(net(x), perm_key)"
+    },
+    "deep_attacker": {
+      "class": "TemplateDecoder",
+      "args": [
+        256,
+        512
+      ],
+      "target": "arcface embedding (L2)"
+    },
+    "attribute_attacker": {
+      "class": "AttributeClassifier",
+      "gender_classes": 2,
+      "age_classes": 4
+    },
+    "rp_baseline_input": "RP(arcface, rp_key) tanpa adaface warp"
+  },
+  "verification": {
+    "raw_cos_min": 0.9919430017471313,
+    "template_cos_min": 0.989760407434831,
+    "n": 8
+  },
+  "env": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.0.2",
+    "insightface": "0.7.3",
+    "onnxruntime": "1.19.2",
+    "sklearn": "1.6.1"
+  }
+}

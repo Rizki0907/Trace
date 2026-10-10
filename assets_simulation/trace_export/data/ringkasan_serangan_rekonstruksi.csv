@@ -1,0 +1,4 @@
+Metode,Rata Rata Kemiripan Kosinus,Tingkat Keberhasilan Reidentifikasi,Ukuran Sampel N_eff
+Random Projection,0.8645114495274928,0.282876064333018,1057
+BioHashing,0.7686320998352132,0.20813623462630085,1057
+Metode Usulan,0.14224388381273712,0.000946073793755913,1057
